@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayhan</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9818622648.js" crossorigin="anonymous"></script>
+    <style>
+        .line {
+            display: block;
+            width: 50px;
+            height: 1.5px;
+            background-color: #F85C70;
+        }
+
+        .br {
+            border-right: 1px solid gray;
+            border-radius: 0px;
+        }
+
+        .horizontal {
+            border-bottom: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="md:container md:mx-auto bg-gray-900">
+        <!-- nav section -->
+        <nav>
+            <div class="navbar items-center">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost text-white lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu text-[#6d6d6d] menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Resume</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-[#6d6d6d] text-2xl md:text-3xl"><img class=" w-14"
+                            src="images/nav_icons.png" alt="">R a<span class="text-blue-600">y h</span>a n</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-white menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Resume</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn btn-primary text-white">Hire Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <section class=" lg:h-[614px]">
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="/images//redu.png" class="md:w-[500px] md:h-[500px] rounded-lg" />
+                    <div class="text-neutral-300">
+                        <h1 class="text-4xl">Hello, I am</h1>
+                        <h1 class="text-7xl font-bold ">Redoan Ahammad</h1>
+                        <div class="py-6">
+                            <h1 class="text-3xl mb-6">Front end Designer | Developer</h1>
+                            <p>As a web developer, I'm always looking for new opportunities to work on exciting projects
+                                and help businesses achieve their goals. If you're in need of a talented and experienced
+                                developer to help you build a new website or improve an existing one, I'd love to hear
+                                from you.</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary" onclick="my_modal_5.showModal()"><i class="fa-brands fa-readme"></i>Read my CV</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box bg-black">
+                                    <div>
+                                        <table class="table">
+                                            <h2 class="card-title text-4xl">About Me</h2>
+                                            <p class="py-6">My name is Md. Redoan Ahammad and I am a passionate
+                                                web developer with 5 years of experience in the industry. I specialize in
+                                                creating beautiful, functional websites that help businesses achieve their goals.</p>
+                                            <!-- row 1 -->
+                                            <tr>
+                                                <td>Birthday</td>
+                                                <td>: 21st October, 2003</td>
+                                            </tr>
+                                            <!-- row 2 -->
+                                            <tr>
+                                                <td>Email</td>
+                                                <td>: hossainrayhan897@gmail.com</td>
+                                            </tr>
+                                            <!-- row 3 -->
+                                            <tr>
+                                                <td>Phone-1</td>
+                                                <td>: +8801733789360</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phone-2</td>
+                                                <td>: +8801933789360</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address</td>
+                                                <td>: Ramganj, Lakshmipur, Bangladesh</td>
+                                            </tr>
+                                            </tbody>
+                                            <h2 class="card-title text-4xl">Personal Info</h2>
+                                            <div class="card-body">
+                                                <h2 class="card-title text-4xl">My Expertise</h2>
+                                                <span class="line  mb-10"></span>
+                                                <div class="flex items-center gap-4">
+                                                    <img class="w-20" src="images/expert-1.png" alt="">
+                                                    <div>
+                                                        <h1 class="text-xl font-medium">Web Design</h1>
+                                                        <p class="text-gray-500">Experienced this field in 5 years</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <img class="w-20" src="images/expert-2.png" alt="">
+                                                    <div>
+                                                        <h1 class="text-xl font-medium">Web Development</h1>
+                                                        <p class="text-gray-500">Experienced this field in 5 years</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                    <img class="w-20" src="images/expert-3.png" alt="">
+                                                    <div>
+                                                        <h1 class="text-xl font-medium">Flutter Development</h1>
+                                                        <p class="text-gray-500">Experienced this field in 3 years</p>
+                                                    </div>
+                                                </div>
+                                        </table>
+                                    </div>
+                                    <div class="modal-action">
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- about me section -->
+        <section>
+            <div class="horizontal flex flex-col md:flex-col lg:flex-row lg:h-[500px]">
+                <div class="br card lg:w-1/3 bg-base-100 lg:py-16">
+                    <div class="card-body">
+                        <h2 class="card-title text-4xl">Who am I ?</h2>
+                        <span class="line  mb-10"></span>
+                        <p class="text-2xl mb-4">A Web Designer / Developer Located In Our Lovely Earth</p>
+                        <p class="text-sm text-gray-500 mb-4">I've always been fascinated by the internet and the power
+                            it has to connect people and
+                            businesses around the world. When I was in college, I took a few programming courses and
+                            quickly realized that web development was the perfect way to combine my love of technology
+                            with my passion for creative problem-solving.</p>
+                        <div class="card-actions justify-start">
+                            <button class="btn btn-outline btn-error">Download My CV</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="br card lg:w-1/3 bg-base-100 py-16">
+                    <div class="card-body">
+                        <h2 class="card-title text-4xl">Personal Info</h2>
+                        <span class="line  mb-10"></span>
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                                <!-- row 1 -->
+                                <tr>
+                                    <td>Birthday</td>
+                                    <td>: 21st October, 2003</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <td>Email</td>
+                                    <td>: hossainrayhan897@gmail.com</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <td>Phone-1</td>
+                                    <td>: +8801733789360</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone-2</td>
+                                    <td>: +8801933789360</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>: Ramganj, Lakshmipur, Bangladesh</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="space-x-7 text-start">
+                            <a href="https://www.facebook.com/ra.rayhan60"> <i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/rayhan360"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.quora.com/profile/Md-Redoan-Ahammad"><i
+                                    class="fa-brands fa-quora"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="br card lg:w-1/3 bg-base-100 py-16">
+                    <div class="card-body">
+                        <h2 class="card-title text-4xl">My Expertise</h2>
+                        <span class="line  mb-10"></span>
+                        <div class="flex items-center gap-4">
+                            <img class="w-20" src="images/expert-1.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-medium">Web Design</h1>
+                                <p class="text-gray-500">Experienced this field in 5 years</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img class="w-20" src="images/expert-2.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-medium">Web Development</h1>
+                                <p class="text-gray-500">Experienced this field in 5 years</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img class="w-20" src="images/expert-3.png" alt="">
+                            <div>
+                                <h1 class="text-xl font-medium">Flutter Development</h1>
+                                <p class="text-gray-500">Experienced this field in 3 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Resume Section  -->
+
+        <section class="mt-10 max-w-7xl mx-auto">
+            <h1 class="text-6xl text-center"><span class="text-[#F85C70]">My</span> Resume</h1>
+            <div class="flex gap-5 flex-col md:flex-col lg:flex-row">
+                <div class="border card lg:w-1/3 bg-base-100 mt-10 lg:py-16">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">My Job Career</h2>
+                        <span class="line mb-8"></span>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2022 - Present</h1>
+                            <p class="text-base mb-6">Front-end Developer</p>
+                            <p class="text-xs border-b pb-4 text-gray-600">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum dolorum voluptatem voluptate repellendus soluta, nihil
+                                distinctio
+                                perspiciatis quisquam iusto impedit?</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2021 - 2022</h1>
+                            <p class="text-base mb-6">Web Developer</p>
+                            <p class="text-xs border-b pb-4 text-gray-600">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum dolorum voluptatem voluptate repellendus soluta, nihil
+                                distinctio
+                                perspiciatis quisquam iusto impedit?</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2020 - 2021</h1>
+                            <p class="text-base mb-6">Web Designer</p>
+                            <p class="text-xs text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Harum
+                                dolorum voluptatem voluptate repellendus soluta, nihil distinctio perspiciatis quisquam
+                                iusto impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border card lg:w-1/3 bg-base-100 mt-10 lg:py-16">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">My Education</h2>
+                        <span class="line mb-8"></span>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2021 - Present</h1>
+                            <p class="text-base mb-6">Diploma in Engineering</p>
+                            <p class="text-xs border-b pb-4 text-gray-600">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum dolorum voluptatem voluptate repellendus soluta, nihil
+                                distinctio
+                                perspiciatis quisquam iusto impedit?</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2018 - 2020</h1>
+                            <p class="text-base mb-6">Dakhil</p>
+                            <p class="text-xs border-b pb-4 text-gray-600">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum dolorum voluptatem voluptate repellendus soluta, nihil
+                                distinctio
+                                perspiciatis quisquam iusto impedit?</p>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl text-[#F85C70] mb-2">2015 - 2018</h1>
+                            <p class="text-base mb-6">Junior Dakhil Certificate</p>
+                            <p class="text-xs text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Harum
+                                dolorum voluptatem voluptate repellendus soluta, nihil distinctio perspiciatis quisquam
+                                iusto impedit?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border card lg:w-1/3 bg-base-100 mt-10 lg:py-16">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Skills</h2>
+                        <span class="line mb-8"></span>
+                        <div class="flex gap-2">
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Tailwind</p>
+                                <p>JavaScript</p>
+                                <p>ReactJS</p>
+                                <p>Firebase</p>
+                                <p>NodeJS</p>
+                                <p>ExpressJS</p>
+                                <p>MongoDB</p>
+                            </div>
+                            <div>
+                                <progress class="progress progress-error w-72" value="90" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="70" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="70" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="60" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="65" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="50" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="0" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="0" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="0" max="100"></progress>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Language</h2>
+                        <span class="line mb-8"></span>
+                        <div class="flex gap-2">
+                            <div>
+                                <p>English</p>
+                                <p>Bengali</p>
+                                <p>Hindi</p>
+                                <p>French</p>
+                            </div>
+                            <div>
+                                <progress class="progress progress-error w-72" value="90" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="70" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="70" max="100"></progress>
+                                <progress class="progress progress-error w-72" value="10" max="100"></progress>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service section -->
+        <section class="mt-10 max-w-7xl mx-auto">
+            <h1 class="text-6xl text-center"><span class="text-[#F85C70]">My </span>Services</h1>
+            <div class="mt-12 ml-6 md:ml-44 lg:ml-12">
+                <div class="flex gap-5 flex-col md:flex-col lg:flex-row">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/service-1.jpg" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-2xl text-[#F85C70]">Website Development</h2>
+                            <p class="text-sm text-gray-500">In order to satisfy customers, Creative Tech Park provides
+                                the best website design service. We put the needs of the client first when creating a
+                                website for them. Since we are a website design firm, we concentrate on meeting the
+                                needs of our clients to ensure their maximum degree of satisfaction. Our motto is “happy
+                                client, healthy business”.</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/service-2.jpg" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-2xl text-[#F85C70]">UI/UX Design</h2>
+                            <p class="text-sm text-gray-500">In order to satisfy customers, Creative Tech Park provides
+                                the best website design service. We put the needs of the client first when creating a
+                                website for them. Since we are a website design firm, we concentrate on meeting the
+                                needs of our clients to ensure their maximum degree of satisfaction. Our motto is “happy
+                                client, healthy business”.</p>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/service-3.jpg" alt="" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-2xl text-[#F85C70]">Ecommerce app with custom design</h2>
+                            <p class="text-sm text-gray-500">In order to satisfy customers, Creative Tech Park provides
+                                the best website design service. We put the needs of the client first when creating a
+                                website for them. Since we are a website design firm, we concentrate on meeting the
+                                needs of our clients to ensure their maximum degree of satisfaction. Our motto is “happy
+                                client, healthy business”.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- hire confusion section -->
+        <section class="mt-10 max-w-7xl mx-auto">
+            <h1 class="text-5xl text-center"><span class="text-[#F85C70]">Why You Should</span> Hire Me? </h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-12 ml-6 md:ml-12 lg:ml-44 gap-5">
+                <div>
+                    <img src="images/should-1.png" alt="">
+                    <p class="text-gray-800">Long Experience</p>
+                </div>
+                <div>
+                    <img src="images/should-2.png" alt="">
+                    <p class="text-gray-800">Highly Professional</p>
+                </div>
+                <div>
+                    <img src="images/should-3.png" alt="">
+                    <p class="text-gray-800">Quick Support</p>
+                </div>
+                <div>
+                    <img src="images/should-4.png" alt="">
+                    <p class="text-gray-800">Fast Delivery</p>
+                </div>
+                <div>
+                    <img src="images/should-5.png" alt="">
+                    <p class="text-gray-800">Excellent UI-UX</p>
+                </div>
+                <div>
+                    <img src="images/should-6.png" alt="">
+                    <p class="text-gray-800">Focus On Results</p>
+                </div>
+                <div>
+                    <img src="images/should-7.png" alt="">
+                    <p class="text-gray-800">Domain Service</p>
+                </div>
+                <div>
+                    <img src="images/should-8.png" alt="">
+                    <p class="text-gray-800">Satisfied Guarantee</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section class="mt-10 max-w-7xl mx-auto">
+            <h1 class="text-5xl text-center"><span class="text-[#F85C70]">Features</span> Portfolio </h1>
+            <div>
+                <div class="bg-white">
+                    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                        <div
+                            class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                            <a href="https://rayhan360.github.io/penguin-fashion/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-1.png" alt=""
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+
+                                <p class="mt-1 text-lg font-medium text-gray-900">Penguin Fashion</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/Gamer/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-2.png"
+                                        alt="Olive drab green insulated bottle with flared screw lid and flat top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">Gaming Website</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/digital_agency/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-3.png"
+                                        alt="Person using a pen to cross a task off a productivity paper card."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">Digital Agency</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/Groccery-Project/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-4.png"
+                                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">Grocerry Shop</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/coffee_shop/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-5.png"
+                                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">Coffee Shop</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/FlowerSite/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-6.png"
+                                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">CharmingFlowerShop</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/Hallowen_website/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-7.png"
+                                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+
+                                <p class="mt-1 text-lg font-medium text-gray-900">Halloween Website</p>
+                            </a>
+                            <a href="https://rayhan360.github.io/Dentist-website/" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                                    <img src="images/portfolio-8.png"
+                                        alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75">
+                                </div>
+                                <p class="mt-1 text-lg font-medium text-gray-900">Dental Care</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="my-32 lg:m-24">
+            <h1 class="text-5xl text-center"><span class="text-[#F85C70]">Frequently Ask Question </span>and Progress
+            </h1>
+            <div class="hero">
+                <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+                    <div>
+                        <div class="flex flex-col gap-5 lg:flex-row">
+                            <div class="radial-progress h-64 w-64 justify-center" style="--value:99;">Success Rate:
+                                99.99%</div>
+                            <div class="radial-progress h-64 w-64 justify-center" style="--value:80;">Project Complete:
+                                80%</div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row stats shadow w-auto">
+
+                            <div class="stat">
+                                <div class="stat-figure text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        class="inline-block w-8 h-8 stroke-current">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-title">Total Projects</div>
+                                <div class="stat-value">35+</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-figure text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        class="inline-block w-8 h-8 stroke-current">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="stat-title">Project Completion</div>
+                                <div class="stat-value">33+</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-figure text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        class="inline-block w-8 h-8 stroke-current">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="stat-title">Success Rate</div>
+                                <div class="stat-value">99.99%</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <!-- first question -->
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                Can you provide examples of websites you have developed in the past?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Yes, I will give you examples of websites I have created and work according to your
+                                    niche</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                Will my website be mobile-friendly?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Yes, Your website fully responsive and obviously mobile mobile-friendly </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                How will you ensure my website is search engine optimized (SEO)?
+                            </div>
+                            <div class="collapse-content">
+                                <p>No, I will not ensure your website is search engine optimized</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                Can I make changes to my website after it's launched?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Yes, You changes to your website after it's launched</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                Will you provide website maintenance and support after the launch?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Yes, I will support you until 2 months of project completion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client feedback -->
+        <section class="my-24 lg:m-24">
+            <h1 class="text-5xl text-center"><span class="text-[#F85C70]">Clients </span>Feedback </h1>
+            <div class="grid gap-10 grid-cols-1 mt-14 md:grid-cols-2 lg:grid-cols-3">
+                <!-- first review -->
+                <div class="card bg-base-100 p-9 border border-gray-400">
+                    <figure><img class="w-36" src="images/user-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <p>"Working with Mr. Redoan was a fantastic experience. They were professional, responsive, and
+                            delivered a high-quality website that exceeded our expectations."</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info">Adam Smith</h4>
+                            <p>Manage, Palantir Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second review -->
+                <div class="card bg-base-100 p-9 border border-gray-400">
+                    <figure><img class="w-36" src="images/user-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <p>"I highly recommend Mr. Redoan for anyone looking for web development services. They were
+                            able to take our vision and turn it into a beautiful, functional website that has helped our
+                            business grow.".</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info">Natasha Hazelburg</h4>
+                            <p>CTO, Slack Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- third review -->
+                <div class="card bg-base-100 p-9 border border-gray-400">
+                    <figure><img class="w-36" src="images/user-3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <p>"We have worked with several web development companies in the past, but Mr. Redoan stands out
+                            as the best. Their attention to detail and commitment to customer satisfaction is
+                            unmatched."</p>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-info">Jothika Beddi</h4>
+                            <p>MD, Twilio Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="images/user-1.png" />
+                        </div>
+                    </div>
+                    <div class="chat-bubble">Attention to detail, commitment to satisfaction.</div>
+                </div>
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="images/user-2.png" />
+                        </div>
+                    </div>
+                    <div class="chat-bubble">Highly recommend for web development services.</div>
+                </div>
+                <div class="chat chat-start">
+                    <div class="chat-image avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="images/user-2.png" />
+                        </div>
+                    </div>
+                    <div class="chat-bubble">Game-changer for our business, user-friendly, visually appealing.</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- get in touch section -->
+        <section class="my-24 lg:m-24">
+            <h1 class="text-5xl text-center mb-10"><span class="text-[#F85C70]">Get </span>In Touch </h1>
+            <div class="hero min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-36">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-2xl text-center"><span class="text-[#F85C70]">My </span>Contact Details </h1>
+                        <p class="py-6">My name is Md. Redoan Ahammad and I am a passionate
+                            web developer with 5 years of experience in the industry. I specialize in
+                            creating beautiful, functional websites that help businesses achieve their goals.</p>
+                        <p class="text-red-400">Email: </p>
+                        <p>hossainrayhan897@gmail.com</p> <br>
+                        <p class="text-red-400">Number: </p>
+                        <p>+8801733789360</p> <br>
+                        <p class="text-red-400">Address: </p>
+                        <p>Ramganj, Lakshmipur, Bangladesh</p>
+                    </div>
+                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Name</span>
+                                </label>
+                                <input type="text" placeholder="Your Name" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Email</span>
+                                </label>
+                                <input type="text" placeholder="Your Email" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Phone</span>
+                                </label>
+                                <input type="text" placeholder="Your Phone" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Your Requirements</span>
+                                </label>
+                                <textarea name="" id="" class="border p-4" cols="30" rows="10"
+                                    placeholder="Write a Message"></textarea>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+            <div>
+                <p>Copyright © 2023 - All right reserved by Redoan Ahammad</p>
+            </div>
+        </footer>
+    </footer>
+
+
+</body>
+
+</html>
